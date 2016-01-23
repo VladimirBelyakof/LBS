@@ -1,10 +1,15 @@
+package jaxb.general;
+
+import javax.xml.bind.annotation.*;
 import java.util.Date;
 
-/**
- * Created by vladimir on 13.12.15.
- */
+@XmlRootElement
+@XmlType
+@XmlAccessorType(XmlAccessType.FIELD)
 public class TimerNode extends Node {
+
     private Date runDate;
+
     public Date getRunDate() {
         return runDate;
     }
